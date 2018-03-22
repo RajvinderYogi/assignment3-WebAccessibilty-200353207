@@ -1,0 +1,319 @@
+/* CSS file for assignment 3 - COMP1074 by Rajvinder Singh Yogi - 200353207*/
+/* imported the fonts from fonts-google */
+@import url('https://fonts.googleapis.com/css?family=Contrail+One');
+/*styles for body goes here */
+body{
+    background-color: rgba(145, 192, 121, 0.3);
+    max-width: 100%;
+    width: 60%;
+    margin: 0 0 0 20%;
+    font-family: 'Contrail One', cursive;   
+}
+header{
+	width: 960px;
+	margin: 0 auto;
+	/*background: lightblue;*/
+}
+/* set container background to stand down the content */
+.container{
+    background-color:rgba(143, 190, 117, 0.6);
+    overflow: hidden;
+}
+/* multiple styles applied on headings, anchor elements, navigation and etc */
+h1{
+    text-align: center;    
+}
+
+a{
+    color: #000000;
+}
+.navigation{
+	width: 960px;
+	color: #000;
+}
+
+.navigation  ul{
+	list-style: none;
+	text-align: center;
+	padding: 5px;
+}
+
+.navigation  ul li{
+	display: inline;
+	padding: 0 20px;
+}
+nav a:hover{
+    background-color: rgba(21, 31, 34, 0.51);
+    color: white;
+}
+.subMenu{
+    display:block;
+}
+.reviewSection{
+    width: 100%;
+    float: left;
+    margin-left: 0px;
+}
+article{
+    display: block;
+}
+figure{
+    float: left;
+}
+.book-cover{
+    margin-right: 50px;
+    box-shadow: 5px 5px 5px;
+    border-radius: 25px;
+}
+figcaption{
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    padding: 10px;
+    text-align: center;
+}
+h5{
+    padding: 15px;
+}
+button{
+    margin-left: 5%;
+}
+.book-suggest{
+    text-align: center;
+    text-decoration: underline;
+}
+.book-name{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+form{
+ background-color: #aed09c;
+ size: 70%;
+}
+.tip-form {
+    margin-left: 25%;
+    width: 100%;
+}
+label {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+input{
+    font: 1em sans-serif;
+    width: 45%;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+select{
+    font: 1em sans-serif;
+    width: 45%;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.addButton {
+    background-color: green;
+    border: greenyellow;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+.subButton {
+    margin-left: .5em;
+    background-color: red;
+    border: maroon;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+.buyButton {
+    margin-left: .5em;
+    background-color: royalblue;
+    border: navy;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+.clearButton {
+    margin-left: .5em;
+    background-color: orange;
+    border: orange;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+}
+.buttonCenter{
+        margin-bottom: 50px;
+        margin-left: 25%;
+        margin-top: 25px;
+}
+
+fieldset{
+    background-color: #aed09c
+}
+footer{
+    text-align: center;
+}
+
+
+
+
+
+
+/* ARIA examples CSS */
+
+
+fieldset label {
+    display:inline-block;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+fieldset input{
+    margin-right: 20%;
+}
+
+fieldset > div {
+    position: relative;
+    margin-bottom:2em;
+}
+
+[role="tooltip"] {
+    display: none;
+    padding: 0.25em;
+    margin: 0;
+    border-radius: 5px;
+    color: #fff;
+    background:#E31E41CC;
+    width: auto;
+    z-index: 2;
+}
+
+input:focus + [role="tooltip"] {
+    display: block;
+    position: absolute;
+}
+
+/* Tabs */
+
+ul[role="tablist"] {
+    margin:0;
+}
+
+[role="tabpanel"][aria-hidden="true"] {
+    display: none;
+}
+
+[role="tablist"] li {
+    display: inline-block;
+    list-style: none;
+}
+
+a[aria-selected], a[role="tab"]:focus {
+    background: #869e79;
+    color: #222;
+    border: 2px solid #222;
+    border-bottom: 0;
+    position: relative;
+    top: 2px;
+}
+a[role="tab"] {
+    padding: 0.75em 0.33em;
+    display: inline-block;
+    margin-right: 0.25em;
+}
+
+[role="tabpanel"] {
+    margin-top: 0;
+    padding: 1.5em;
+    border: 2px solid #222;
+}
+
+/* online status */
+
+.online {
+    padding:1em;
+    color:#fff;
+    background:green;
+}
+
+.offline {
+    padding:1em;
+    color:#fff;
+    background:orange;
+}
+
+/* dropdowns */
+
+#examples nav li {
+    display:block;
+}
+
+[aria-label^="example"] ul {
+    background: #1928cf;
+    padding:0;
+}
+
+[aria-label^="example"] ul:after {
+    content: '\0020';
+    display: block;
+    clear: both;
+}
+
+[aria-label^="example"] li {
+    float: left;
+    vertical-align: top;
+    list-style: none;
+}
+
+[aria-label^="example"] a {
+    color: #fff;
+    display: block;
+    padding: 0.5em;
+    text-shadow:none;
+}
+
+[aria-label^="example"] a:hover, [aria-label^="example"] a:focus {
+    background: #222;
+}
+
+[aria-haspopup="true"] {
+    position: relative;
+}
+
+[aria-haspopup="true"] span {
+    font-size: 0.85em;
+    padding-left: 0.25em;
+}
+
+ul[aria-hidden="true"] {
+    display: none;
+}
+
+[aria-haspopup="true"] + ul[aria-hidden="false"] {
+    margin-top: 0;
+    display: block;
+    position: absolute;
+    min-width: 200px;
+}
+
+
+[aria-haspopup="true"]:focus + ul, [aria-haspopup="true"]:hover + ul {
+    margin-top: 0;
+    display: block;
+    position: absolute;
+    min-width: 200px;
+}
+
+[aria-haspopup="true"] + ul li {
+    float: none;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--My name is Rajvinder Singh Yogi, Student # - 200353207. This is index file for assignment 3 of COMP 1074 - Web Usability/Accessibility.
+        My primary audience would be the follower of author Richard Sennet. Moreover, People who love to read books and shop books online. People who want to improve the quality of their skills in craft.  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Craftsman</title>
+        <!-- Stylesheet linked here for normalization -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Customized stylesheet attached here -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div class="container"> <!-- DIV with class contaner which contain all the content starts here -->
+            <header role="banner"><!-- Header starts here which cotains main heading and navigation-->
+                <h1>The Craftsman</h1>
+                <nav class="navigation" role="navigation" aria-label="Main menu of web page">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#review">Reviews</a></li>
+                        <li><a href="#buy-now">Buy Book</a></li>
+                        <li><a href="#author" >Author</a></li>
+                        <li>
+                            <a href="#" aria-haspopup="true">Other Books</a>
+                            <ul class="subMenu" aria-hidden="true" aria-label="submenu">
+                                    <li><a href="/">Book A</a></li>
+                                    <li><a href="/">Book B</a></li>
+                                    <li><a href="/">Book C</a></li>
+                                    <li><a href="/">Book D</a></li>
+                            </ul>
+                        </li>       
+                    </ul>
+            </header><!-- Header ends here-->
+            <hr><!-- horizontal row -->
+            <main role="main" id="main"><!-- Main content of the website goes here -->
+                <div id="clock" role="timer" aria-live="polite" aria-atomic="true"></div><!-- ARIA-LIVERegion Properties -->
+                <article class="tab-interface">
+                    <ul role="tablist">
+                        <li role="presentation"><a href="#description" role="tab" tabindex="0" aria-controls="description" aria-selected="true">Description</a></li>
+                        <li role="presentation"><a href="#author" role="tab" tabindex="-1" aria-controls="author">Author</a></li>
+                        <li role="presentation"><a href="#synopsis" role="tab" tabindex="-1" aria-controls="sypnosis">Synopsis</a></li>
+                    </ul>
+                    <section id="description" role="tabpanel"><!-- the first part description starts here for website -->
+                            <figure>
+                                    <img class="book-cover" src="images/book-cover.jpg" alt="The Craftsman" title="The Craftsman" width="300" height="400">
+                                    <figcaption><h5>The Craftsman - Book Cover</h5></figcaption>
+                                </figure>
+                        <h2>Description</h2>
+                        <div>                       
+                            <p>Craftsmanship, says Richard Sennett, names the basic human impulse to do a job well for its own sake, and good craftsmanship involves developing skills and focusing on the work rather than ourselves. The computer programmer, the doctor, the artist, and even the parent and citizen all engage in a craftsman’s work. In this thought-provoking book, Sennett explores the work of craftsmen past and present, identifies deep connections between material consciousness and ethical values, and challenges received ideas about what constitutes good work in today’s world</p>
+                            <p style="padding:15px;">The Craftsman engages the many dimensions of skill—from the technical demands to the obsessive energy required to do good work. Craftsmanship leads Sennett across time and space, from ancient Roman brickmakers to Renaissance goldsmiths to the printing presses of Enlightenment Paris and the factories of industrial London; in the modern world he explores what experiences of good work are shared by computer programmers, nurses and doctors, musicians, glassblowers, and cooks. Unique in the scope of his thinking, Sennett expands previous notions of crafts and craftsmen and apprises us of the surprising extent to which we can learn about ourselves through the labor of making physical things.</p>
+                        </div>
+                    </section>
+                    <section id="author" role="tabpanel" aria-hidden="true"> <!-- Second part about author starts here-->
+                        <figure>
+                            <img class="book-cover" src="images/author.jpg" alt="Richard Sennette" title="Richard Sennette" width="350" height="400">
+                            <figcaption><h5>Author - Richard Sennett</h5></figcaption>
+                        </figure> 
+                        <div>
+                            <h2>Author</h2>
+                            <p>Richard Sennett (born 1 January 1943) is the Centennial Professor of Sociology at the London School of Economics and University Professor of the Humanities at New York University. Sennett has studied social ties in cities, and the effects of urban living on individuals in the modern world.</p>
+                            <p>He has been a Fellow of The Center for Advanced Study in the Behavioral Sciences, of the American Academy of Arts and Sciences, and of the Royal Society of Literature. He is the founding director of the New York Institute for the Humanities. In 2006 Sennett was the winner of the Hegel Prize awarded by the German city of Stuttgart, in 2008 he was awarded the Gerda Henkel Prize, worth 100,000 Euros, by the Gerda Henkel Foundation of Düsseldorf, Germany, and in 2016 he received the European Essay Prize awarded by the Charles Veillon Foundation in Lausanne.</p>
+                            <small>Source: <a href="https://en.wikipedia.org/wiki/Richard_Sennett">Wikipedia - Richard Sennett</a> 
+                            </small>
+                        </div>      
+                    </section><!-- Second part about author ends here-->     
+                    <section id="synopsis" role="tabpanel" aria-hidden="true"><!-- Fourth part about synopsis starts here-->
+                        <div>
+                            <h2 style="text-align:center;">Synopsis</h2>
+                            <p>Primarily through a historical lens—though never neglecting philosophy, theology, economics, and politics—Richard Sennett explores the implications of craftsmanship, “an enduring, basic human impulse, the desire to do a job well for its own sake” (9). Sennett finds this to be an Enlightenment belief, “that everyone possesses the ability to do good work of some kind” and “that there is an intelligent craftsman in most of us” (11). He states his two main theses in the prologue, both of which, I believe, are quite convincing by the end of the book. First, he argues that “all skills, even the most abstract, begin as bodily practices; second, that technical understanding develops through the powers of imagination” (10).</p>    
+                            <p>A major argument of Sennett’s is the role of social order in the development of craft.  Sennett states that an ancient ideal of craftsmanship is “joined skill in community” (51).  Medieval Workshops, in particular, provided a communal atmosphere and social structure that guided the development of skill through “authority in the flesh” as opposed to knowledge “set down on paper” (54).  There is an implicit authority in the workshop, a social order that values the “quality of skill” over “occupation of a place of honor” (61).  The workshop binds people together as if forms a community of masters and apprentices.  Quality and ethical codes of work are transmitted through such communities (and the guilds in which they participate) ensuring continuity while also allowing for creative developments through partnerships and communal participation.  The medieval workshop began its demise with the Renaissance separation of art and craft.  This separation emphasized the individual and her/his creation of “art” over communal development.  The workshop became an inferior social space reserved for a lower class of society.</p>                          
+                            <p>I fear my summary does little justice to Sennett’s profound development of the role of work, community, formation, and story.  Sennett’s exploration of craft reminds me of John Inge’s similar work on place theory in A Christian Theology of Place.  Like Inge, Sennett avoids nostalgia of a time past and develops a multi-faceted description of the subject using philosophy, theology, economics, sociology, and history.  Sennett’s thesis remains subtle, though its implications spur the imagination and cause discernment with regard to everything from small personal practices to institutional structures.  Sennett has much to offer theology in this text, and many questions worth considering.  How is the task of theology itself ‘good work?’  What if the church and the academy understood themselves as workshops?  With regard to theology of work, does a theological rendering of work properly allow for ambiguity, imagination, and play?  Do Christians determine the ‘ends’ of work prematurely?  Can Christian vocation be appropriately open-ended and if we fail to see our story as in ‘progress’ and evolving?  Ultimately, I find The Craftsman to be a compelling argument for the dynamic matrix-like development of knowledge, character, and community.  All three of these, Sennett argues and I agree, are severely damaged when work is not understood as craft.</p>
+                        </div>
+                    </section><!-- Fourth part about synopsis ends here-->        
+                </article><!-- First part description ends here-->              
+                <article  id="review"><!-- Third part about reviews and buy book starts here-->
+                    <div class="review"><!-- Review section starts here -->
+                        <h2 style="text-align:center;"><section aria-expanded="false" aria-controls="collapsible">Reviews</section></h2>   
+                        <div id="collapsible" aria-hidden="true">             
+                        <div class="reviewSection"> 
+                            <figure>
+                                <img class="book-cover" src="images/spider-man.jpg" alt="The Craftsman" title="The Craftsman" width="125" height="125">
+                                <figcaption>Spider Man</figcaption>
+                            </figure>
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25"> <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-blank.png" alt="review" height="25" width="25">
+                            <p>
+                                <script> document.write(new Date().toLocaleDateString()); </script>
+                            </p>
+                            <p>It's a good book with a fair treatment of the subject. That is, the subject of the craftsman and the laborer's connection to his work.</p>
+                        </div>
+                        <hr>
+                        <div class="reviewSection">
+                            <figure >
+                                <img class="book-cover" src="images/super-man.jpg" alt="The Craftsman" title="The Craftsman" width="125" height="125">
+                                <figcaption>Super Man</figcaption>
+                            </figure>
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-blank.png" alt="review" height="25" width="25"> <img class="review" src="images/review-blank.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-blank.png" alt="review" height="25" width="25">
+                            <p>
+                                <script> document.write(new Date().toLocaleDateString()); </script>
+                            </p>
+                            <p>I gave up after three chapters. It's too ironic that someone so keen on craft pays little attention to good editing. Painfully poor English usage.
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="reviewSection">
+                            <figure>
+                                <img class="book-cover" src="images/bat-man.png" alt="The Craftsman" title="The Craftsman" width="125" height="125">
+                                <figcaption>Bat Man</figcaption>
+                            </figure>
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25"> <img class="review" src="images/review-blank.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-blank.png" alt="review" height="25" width="25">
+                            <p>
+                                    <script> document.write(new Date().toLocaleDateString()); </script>
+                            </p>
+                            <p>Sennett is an unalloyed collectivist who trips over his own biases in just about every paragraph of the book. He glosses over the fatal flaws of his own preferred collectivist ideals</p>
+                        </div>
+                        <hr>
+                        <div class="reviewSection4">
+                            <figure>
+                                <img class="book-cover" src="images/iron-man.jpg" alt="The Craftsman" title="The Craftsman" width="125" height="125">
+                                <figcaption>Iron Man</figcaption>
+                            </figure>
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25"> <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <img class="review" src="images/review-star.png" alt="review" height="25" width="25">
+                            <p>
+                                    <script> document.write(new Date().toLocaleDateString()); </script>
+                            </p>
+                            <p>One of the most thought provoking and compelling books on the life of a maker.</p>
+                        </div>
+                        </div>
+                    </div><!-- Review section end here -->
+                    <div id="buy-now"><!-- Buy Now section starts here -->
+                        <h2 style="text-align:center;">Buy Now</h2>
+                       
+                        <form role="form" class="form" action="">
+                                <div>
+                                    <div class="tip-form">
+                                        <label for="number">Add number of books</label>
+                                        <input role="alert" aria-live="assertive" readonly value="0" id="number" />
+                                    </div>
+                                        <div class="buttonCenter">
+                                            <span>
+                                        <button class="addButton" type="button" class="btn btn-info col-2"title="add 1" aria-controls="number">Add</button>
+                                    </span>
+                                    <span>
+                                        <button class="subButton" type="button" class="btn btn-warning col-4" title="subtract 1" aria-controls="number">Subtract</button>
+                                    </span>
+                                    </div>
+                                </div>
+                            <h4>Personal Information:</h4>
+                            <div >
+                            <div class="tip-form">
+                                <label for="FirstName" class="col-12 col-form-label">First Name*</label>
+                                <input type="text" class="col-12 form-control" id="FirstName" placeholder="Ex: Raj" aria-describedby="FirstName-tip" required>
+                                <div role="tooltip" id="FirstName-tip">Fill Your First Name</div>
+                            </div>
+                            <div class="tip-form">
+                                <label for="LastName" class="col-12 col-form-label">Last Name*</label>
+                                <input type="text" class=" col-12 form-control" id="LastName" placeholder="Ex: Yogi" aria-describedby="LastName-tip" required>
+                                <div role="tooltip" id="LastName-tip">Fill Your Last Name</div>
+                            </div>
+                            <div class="tip-form">
+                                <label for="EmailId" class="col-12 col-form-label">Email*</label>
+                                <input type="email" class=" col-12 form-control" id="EmailId" placeholder="Ex: abc@yahoo.com" aria-describedby="EmailId-tip" aria-invalid="true" required>
+                                <div role="tooltip" id="EmailId-tip">Your Email ID goes here</div>
+                            </div>
+                           
+                                <div class="tip-form">
+                                <label for="PhoneNumber" class="col-12 col-form-label">Contact Number</label>
+                                <input type="tel" class=" col-12 form-control" id="PhoneNumber" placeholder="Ex: (123)-456-7890" aria-describedby="PhoneNumber-tip" aria-invalid="true">
+                                <div role="tooltip" id="PhoneNumber-tip">Enter your Phone Number</div> 
+                            </div>
+                          
+                          <hr>  
+                            <span>
+                                    <h4>Payment Method:</h4>
+                                <label class="tip-form">Please choose one</label>
+                                <div class="tip-form">
+                                <label>
+                                    <input class="form-check-input" type="radio" name="visa" id="visa" value="option1" aria-describedby="Visa-tip" style="width:0px;">
+                                    <div role="tooltip" id="Visa-tip">Selected payment method VISA</div>
+                                    <img alt="Visa Logo" title="Visa" src="images/visa-logo.png"  height="25px" />                                    
+                                </label>    
+                            </div>  
+                            <div class="tip-form">
+                                <labe>
+                                    <input class="form-check-input" type="radio" name="visa" id="paypal" value="option2" aria-describedby="Paypal-tip" style="width:0px;">
+                                    <div role="tooltip" id="Paypal-tip">Selected payment method PayPal</div>
+                                    <img class="col-12" alt="PayPal Logo" title="PayPal" src="images/PayPal-logo.png" height="25px" />                                    
+                                </label> 
+                            </div>       
+                            
+                            <h4>Billing Address:</h4>
+                            <div class="tip-form">
+                                <label for="inputAddress">Address*</label>
+                                <input type="text" id="inputAddress" placeholder="1234 Main St" required aria-describedby="inputAddress-tip">
+                                <div role="tooltip" id="inputAddress-tip">Please enter your current address</div>
+                            </div>
+                            <div class="tip-form">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" aria-describedby="inputAddress2-tip">
+                                <div role="tooltip" id="inputAddress2-tip">Please enter your Unit# or Apt# </div>
+                            </div>
+                            <div class="tip-form">
+                                <label for="inputCity">City*</label>
+                                <input type="text" class="form-control" id="inputCity" required aria-describedby="inputCity-tip">
+                                <div role="tooltip" id="input-tip">Please enter your city</div>
+                            </div>
+                            <div class="tip-form">
+                                <label for="province">Province*</label>
+                                <select id="province" class="form-control" required size="1">
+                                    <option selected aria-disabled="true">Choose...</option>
+                                    <option>AB</option>
+                                    <option>BC</option>
+                                    <option>MN</option>
+                                    <option>NB</option>
+                                    <option>NL</option>
+                                    <option>NS</option>
+                                    <option>ON</option>
+                                    <option>PE</option>
+                                    <option>QB</option>
+                                    <option>SK</option>
+                                </select>
+                            </div>
+                            <div class="tip-form">
+                                <label for="zip">Zip*</label>
+                                <input type="text" class="form-control" id="zip" required aria-describedby="inputzip-tip" aria-invalid="true">                                             <div role="tooltip" id="inputzip-tip">Enter you area's zip code </div>
+                            </div>
+                            <label class="tip-form">Note: Fields with * are mandatory.</label>
+                            <div class="buttonCenter">
+                                <span>
+                                    <button class="buyButton" type="submit" class="btn btn-success col-4">Buy</button>
+                                </span>
+                                <span>
+                                    <button class="clearButton" type="reset" class="btn btn-danger col-4">Clear</button>
+                                </span>
+                            </div>
+                        </div>
+                        </form>
+                        
+                    </div><!-- Buy Now section starts here -->
+                </article><!-- Third part about revews and buy book ends here-->
+                <article>
+                        <div id="status" role="alert" aria-live="assertive" class="online">
+                            <p>You are good to go for purchase</p><!-- ARIA-LIVERegion Properties -->
+                        </div>
+                    </article>
+                
+            </main>
+            <!-- Footer starts here-->
+	        <footer role="contentinfo">
+                <p><small>Rajvinder Yogi - 200353207 - COMP1074 - Web Usability/Accessbility 
+                        <a href="http://rajvinderyogi.com/" title="Personal Website">Visit My Website</a>.
+                    </small>
+                </p>
+            </footer><!-- Footer ends here-->
+        </div><!-- DIV container ends here -->
+            <!-- Scripts attached here -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/aria.js"></script> 
+    </body>
+</html>
